@@ -83,16 +83,16 @@ class ImageConverter extends Obj {
       $command[] = '-profile ' . __DIR__ . DS . 'sRGB.icc';
     }
 
-    if($this->options['autoOrient']) {
-      $command[] = '-auto-orient';
-    }
-    
     $command[] = '-resize';
 
     $dimensions = clone $this->source->dimensions();
     $dimensions->fitWidthAndHeight($this->options['width'], $this->options['height'], $this->options['upscale']);
     $command[] = $dimensions->width() . 'x' . $dimensions->height() . '!';
 
+    if($this->options['autoOrient']) {
+      $command[] = '-auto-orient';
+    }
+    
     $command[] = '-quality ' . $this->options['quality'];
 
     $command[] = escapeshellarg($this->destination->root());
