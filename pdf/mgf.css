@@ -1,0 +1,20 @@
+h1 {
+    color: #008DCE;
+    font-size: 16pt;
+}
+
+h2 {
+    /*color: #008DCE;*/
+    font-size: 10pt;
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    color: #333;
+}
+
+a {
+    color: #008DCE;
+}
