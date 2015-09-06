@@ -69,13 +69,13 @@ class mgfPDF extends PDF
     $this->setHtmlVSpace($tagvs);  
   }
 
-  public function WriteHTML (){
+  public function WriteHTML ($html, $ln = true, $fill = false, $reseth = false, $cell = false, $align = ''){
     $args = func_get_args();
     $args[0] = '<style>' . $this->mfg_css . '</style>' . $args[0];
     call_user_func_array('parent::WriteHTML', $args);
   }
 
-  public function addPage () {
+  public function addPage ($orientation = '', $format = '', $keepmargins = false, $tocpage = false) {
     call_user_func_array('parent::addPage', func_get_args());
     $this->useTemplate($this->template_mgf_id);
   }

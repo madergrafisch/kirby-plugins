@@ -12,6 +12,8 @@ It is based on the [Thumb](https://github.com/getkirby/toolkit/blob/master/lib/t
 
 ## Installation
 
+You must have a working installation of ImageMagick and php 'exec' must be allowed. This plugin doesn't work with GDLib. 
+
 ### Copy & Pasting
 
 If not already existing, add a new `plugins` folder to your `site` directory. Then copy or link this repositories whole content in a new `imageconverter` folder there. Afterwards, your directory structure should look like this:
