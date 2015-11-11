@@ -28,6 +28,25 @@ site/
 
 ## Usage
 
+Use kirby's panel upload hook to process images on file upload.
+
+```php
+kirby()->hook('panel.file.upload', function($file) {
+
+  if ($file->type() == 'image') {
+    $image = new ImageConverter($file, array(
+      'width' => 1024,
+      'height' => 1024,
+      'tosRGB' => true,
+    ));
+    $image->process();
+  }
+
+});
+```
+
+## Examples
+
 Create a new ImageConverter Object by passing a Media Object and some params. 
 
 ```php
@@ -44,7 +63,7 @@ $image = new ImageConverter($image, array(
   'tosRGB' => true,
 ));
 $image->process();
-```
+```php
 
 This converts your image to a maximum size of 1024x1024 px and converts its colorspace to sRGB.
 
