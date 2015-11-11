@@ -28,7 +28,7 @@ site/
 
 ## Usage
 
-Use kirby's panel upload hook to process images on file upload.
+Use kirby 2 [panel upload hook](http://getkirby.com/docs/panel/hooks) to process images on file upload.
 
 ```php
 kirby()->hook('panel.file.upload', function($file) {
