@@ -1,0 +1,8 @@
+{
+    "name": "toolkit",
+    "version": "1.0",
+    "description": "The mgf toolkit",
+    "type": "kirby-plugin",
+    "license": "GPL-3.0",
+    "author": "mgf <http://mgf.at>"
+}
