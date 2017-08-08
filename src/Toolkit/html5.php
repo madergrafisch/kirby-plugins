@@ -2,6 +2,9 @@
 
 namespace mgf\Toolkit;
 
+use Brick;
+use Html;
+
 class Html5 extends Html {
 
   static public function time($timestamp, $format = 'short', $classes = '') {
