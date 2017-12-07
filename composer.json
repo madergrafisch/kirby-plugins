@@ -1,6 +1,6 @@
 {
-  "name": "madergrafisch/toolkit",
-  "description": "A toolkit for kirby.",
+  "name": "mgf/toolkit",
+  "description": "A mgf toolkit for kirby.",
   "type": "library",
   "license": "MIT",
   "keywords": [
