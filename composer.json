@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "getkirby/toolkit": "dev-master"
+    "getkirby/toolkit": "~2.5.7",
   },
   "autoload": {
     "psr-4": {
