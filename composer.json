@@ -1,0 +1,23 @@
+{
+  "name": "madergrafisch/toolkit",
+  "description": "A toolkit for kirby.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "kirby"
+  ],
+  "authors": [
+    {
+    "name": "Christian Zehetner",
+    "email": "admin@mgf.at"
+    }
+  ],
+  "require": {
+    "getkirby/kirby": "~2.5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "mgf\\Toolkit\\": "src/Toolkit/"
+    }
+  }
+}
