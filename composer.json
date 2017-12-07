@@ -6,6 +6,7 @@
   "keywords": [
     "kirby"
   ],
+  "minimum-stability": "dev",
   "authors": [
     {
     "name": "Christian Zehetner",
